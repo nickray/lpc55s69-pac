@@ -96,6 +96,12 @@ _modify:
       size: 0x1C
 
 USB1:
+  DEVCMDSTAT:
+    _add:
+      FORCE_FS:
+        description: Force USB device to operate in full-speed mode.
+        bitOffset: 21
+        bitWidth: 1
   EPLISTSTART:
     _delete:
       - EP_LIST_PRG
